@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Denis Novik</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="head">
+          <li class="head-nav"><a href="" class="link">Home</a></li>
+          <li class="head-nav"><a href="" class="link">About Me</a></li>
+          <li class="head-nav"><a href="" class="link">Skills</a></li>
+          <li class="head-nav"><a href="" class="link">Portfolio</a></li>
+          <li class="head-nav"><a href="" class="link">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="menu" aria-expanded="true" id="menu-modal" data-modal>
+      <div class="container">
+        <button type="button" class="cross" aria-controls="menu-modal"></button>
+        <div class="mob-menu">
+          <ul class="mod-menu">
+            <li class="head-nav"><a href="#home" class="link">Home</a></li>
+            <li class="head-nav">
+              <a href="#about" class="link">About Me</a>
+            </li>
+            <li class="head-nav">
+              <a href="#skills" class="link">Skills</a>
+            </li>
+            <li class="head-nav">
+              <a href="#portfolio" class="link">Portfolio</a>
+            </li>
+            <li class="head-nav">
+              <a href="#contacts" class="link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- hero -->
+      <section class="section container" id="home">
+        <div class="hero">
+          <h1 class="main-title">
+            Denis <br />
+            Novik
+          </h1>
+          <p class="hero-text">
+            UX | UI designer <br />
+            24 years old, Minsk
+          </p>
+
+          <a href="" class="leng"
+            ><span class="languag">ru</span>|<span class="languag">eng</span></a
+          >
+
+          <button
+            type="button"
+            class="menu-but-open but"
+            aria-expanded="false"
+            data-modal-open
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <img id="before-desc-photo" src="./img/novik.jpg" alt="Denis's photo" />
+        <img
+          id="desc-photo"
+          src="./img/denis.jpg"
+          alt="Denis's photo"
+          height="478"
+        />
+      </section>
+
+      <!-- about me -->
+      <section class="section abot" id="about">
+        <div class="about container">
+          <h2>About Me</h2>
+          <p class="about-text">
+            Hi, I'm Denis - UX/UI designer from Minsk. I'm interested in design
+            and everything connected with it. <br />
+            <br />
+            I'm studying at courses "Web and mobile design interfaces" in
+            IT-Academy. <br />
+            <br />
+            Ready to implement excellent projects with wonderful people.
+          </p>
+          <div class="pc-text">
+            <p class="about-text-in">
+              Hi, I'm Denis - UX/UI designer from Minsk. </p>
+              <p class="about-text-in"> I'm interested in
+              design and everything connected with it.</p>
+            <p class="about-text-in">I'm studying at courses "Web and mobile design</p>
+            <p class="about-text-in">
+               interfaces" in IT-Academy.
+            </p>
+            <p class="about-text-in">Ready to implement excellent projects</p>
+            <p class="about-text-in"> with wonderful people.</p>
+          </div>
+        </div>
+      </section>
+      <!-- skills -->
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="skills-head">Skills</h2>
+          <p class="skills-text">I work in such programs as</p>
+          <ul class="skill-list">
+            <li class="proga">
+              <svg class="prog-icon" width="88" height="88">
+                <use href="/img/programms.svg#icon-PS"></use>
+              </svg>
+              <p class="skill-text">
+                Adobe <br />
+                Photoshop
+              </p>
+              <img src="./img/4star.png" alt="4 stars" class="stars" />
+            </li>
+            <li class="proga">
+              <svg class="prog-icon" width="88" height="88">
+                <use href="./img/programms.svg#icon-AI"></use>
+              </svg>
+              <p class="skill-text">
+                Adobe <br />
+                Illustrator
+              </p>
+              <img src="./img/3star.png" alt="3 stars" class="stars" />
+            </li>
+            <li class="proga">
+              <svg class="prog-icon" width="88" height="88">
+                <use href="./img/programms.svg#icon-AE"></use>
+              </svg>
+              <p class="skill-text">
+                Adobe <br />
+                After Effects
+              </p>
+              <img src="./img/4star.png" alt="4 stars" class="stars" />
+            </li>
+            <li class="proga">
+              <svg class="prog-icon" width="88" height="88">
+                <use href="./img/programms.svg#icon-Figma"></use>
+              </svg>
+              <p class="skill-text">Figma</p>
+              <img src="./img/4star.png" alt="4 stars" class="stars" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- portfolio -->
+      <section class="section" id="portfolio">
+        <div class="container">
+          <h2 class="portfol-head">Portfolio</h2>
+          <img src="./img/fasion.jpg" alt="" />
+          <a href="" class="port-link">Online fashion store - Homepage</a>
+          <img src="./img/reebok.jpg" alt="" />
+          <a href="" class="port-link">Reebok Store - Concept</a>
+          <img src="./img/camera.jpg" alt="" />
+          <a href="" class="port-link">Braun Landing Page - Concept</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- foot -->
+
+    <footer class="footer section" id="contacts">
+      <div class="footer-container">
+        <h2>Contacts</h2>
+        <p class="foot-text">
+          Want to know more or just chat? <br />
+          You are welcome!
+        </p>
+
+        <a href="" class="mess-but">Send message</a>
+        <ul class="socmed-list">
+          <li>
+            <a href="">
+              <svg width="40" height="40">
+                <use class="icons" href="./img/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="40" height="40">
+                <use class="icons" href="./img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="40" height="40">
+                <use class="icons" href="./img/icons.svg#icon-behance"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="40" height="40">
+                <use class="icons" href="./img/icons.svg#icon-ball"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="follow-text">
+          Like me on <br />
+          LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+  </body>
+</html>
