@@ -1,0 +1,475 @@
+:root {
+  --fheader: #828282;
+  --maintext: #000000;
+  --maincolor: #ffffff;
+  --secondarycolor: #f6f6f6;
+}
+
+.container {
+  max-width: 315px;
+  margin-right: auto;
+  margin-left: auto;
+
+  position: relative;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--maincolor);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* haeder */
+
+.header {
+  border-bottom: 1px solid var(--fheader);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  display: none;
+}
+
+.head {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.head-nav {
+  color: var(--fheader);
+  /* margin-left: 155px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.head-nav:first-child {
+  margin: 0;
+}
+
+.head-nav:focus,
+.head-nav:hover {
+  color: var(--maintext);
+  cursor: pointer;
+}
+
+.leng {
+  display: none;
+  /* flex-direction:column; */
+  writing-mode: vertical-rl;
+  text-orientation: revert-layer;
+
+  text-transform: uppercase;
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+.languag {
+  color: var(--fheader);
+}
+
+.languag:focus,
+.languag:hover,
+.languag:active,
+.languag:visited {
+  color: var(--maintext);
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.menu-but-open {
+  border: none;
+  background-color: transparent;
+}
+
+.but {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  position: absolute;
+  content: "";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  right: -30px;
+  transform: translate(-50%, -50%);
+}
+
+.menu-but-open span {
+  position: relative;
+  width: 33px;
+  height: 4px;
+  background-color: black;
+  padding: 0;
+}
+
+.menu-but-open span:nth-child(2) {
+  top: 5px;
+}
+
+.menu-but-open span:nth-child(3) {
+  top: 10px;
+}
+
+.mob-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #fff;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.head-nav a {
+  display: flex;
+  justify-content: center;
+}
+
+.cross {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+  right: 0;
+  top: 10%;
+}
+
+.menu {
+  display: none;
+}
+
+.is-open {
+  display: block;
+}
+
+/* main */
+
+/* Section */
+
+.section {
+  /* text-align: center; */
+  margin-top: 82px;
+}
+
+.section:nth-child(1) {
+  margin-top: 65px;
+}
+
+section:nth-child(2n) {
+  background-color: var(--secondarycolor);
+}
+
+/* About me */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.about-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Denis Novak */
+
+.hero {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+#before-desc-photo {
+  display: block;
+  margin-top: 36px;
+}
+
+#desc-photo {
+  display: none;
+  height: 387px;
+}
+
+.main-title {
+  font-size: 47px;
+  margin-bottom: 23px;
+  /* margin-right: 298px; */
+}
+
+.hero-text {
+  font-weight: medium;
+}
+
+.pc-text {
+  display: none;
+}
+
+/* skills */
+
+.skills-head {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.skills-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.skill-text {
+  color: var(--fheader);
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.prog-icon {
+  margin-top: 76px;
+  margin-bottom: 24px;
+}
+
+.stars {
+  margin-top: 42px;
+}
+
+.proga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .skill-list > li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+/* portfolio */
+
+.portfol-head {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  margin-bottom: 65px;
+}
+
+.port-link {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--maintext);
+
+  margin-top: 35px;
+  margin-bottom: 78px;
+}
+
+/* footer */
+
+.footer-container {
+  max-width: 315px;
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-bottom: 124px;
+}
+
+.footer {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot-text {
+  margin-top: 20px;
+}
+
+.mess-but {
+  display: inline-block;
+  background-color: var(--maintext);
+
+  width: 100%;
+
+  padding: 8px 30px;
+  border-radius: 25px;
+
+  color: var(--maincolor);
+  text-decoration: none;
+
+  font-weight: bold;
+
+  margin-top: 30px;
+}
+
+.socmed-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* gap: 24px; */
+  list-style: none;
+  justify-content: space-between;
+
+  margin-top: 85px;
+}
+
+.follow-text {
+  font-weight: 300;
+  color: var(--fheader);
+  margin-top: 45px;
+
+  font-size: 14px;
+}
+
+.icons {
+  fill: black;
+}
+
+@media screen and (min-width: 1445px) {
+  .container {
+    max-width: 945px;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .hero > .menu-but-open {
+    display: none;
+  }
+
+  .leng {
+    display: block;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #before-desc-photo {
+    display: none;
+  }
+
+  #desc-photo {
+    display: block;
+    content: url(/img/denis.jpg);
+  }
+
+  .photo {
+    height: 387px;
+  }
+
+  /* about */
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    display: none;
+  }
+
+  .abot > .container {
+    width: 485px;
+  }
+
+  .about-text-in {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .about-text-in:nth-child(2n) {
+    margin-bottom: 10px;
+  }
+
+  .about-text-in:last-child {
+    margin-bottom: 0;
+  }
+
+  .pc-text {
+    display: block;
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 485px;
+  }
+
+  /* skills */
+
+  .skill-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* portfolio */
+
+  img {
+    max-width: 100%;
+  }
+}
