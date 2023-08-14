@@ -24,11 +24,15 @@
     <header class="header container">
       <nav>
         <ul class="head">
-          <li class="head-nav"><a href="" class="link">Home</a></li>
-          <li class="head-nav"><a href="" class="link">About Me</a></li>
-          <li class="head-nav"><a href="" class="link">Skills</a></li>
-          <li class="head-nav"><a href="" class="link">Portfolio</a></li>
-          <li class="head-nav"><a href="" class="link">Contacts</a></li>
+          <li class="head-nav"><a href="#about" class="link">About Me</a></li>
+          <li class="head-nav"><a href="#home" class="link">Home</a></li>
+          <li class="head-nav"><a href="#skills" class="link">Skills</a></li>
+          <li class="head-nav">
+            <a href="#portfolio" class="link">Portfolio</a>
+          </li>
+          <li class="head-nav">
+            <a href="#contacts" class="link">Contacts</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -40,10 +44,10 @@
           <ul class="mod-menu">
             <li class="head-nav"><a href="#home" class="link">Home</a></li>
             <li class="head-nav">
-              <a href="#about" class="link">About Me</a>
+              <a href="About" class="link">About Me</a>
             </li>
             <li class="head-nav">
-              <a href="#skills" class="link">Skills</a>
+              <a href=" #skills " class="link">Skills</a>
             </li>
             <li class="head-nav">
               <a href="#portfolio" class="link">Portfolio</a>
@@ -58,9 +62,9 @@
 
     <main>
       <!-- hero -->
-      <section class="section container" id="home">
+      <section class="section container">
         <div class="hero">
-          <h1 class="main-title">
+          <h1 class="main-title" id="home">
             Denis <br />
             Novik
           </h1>
@@ -86,7 +90,7 @@
         </div>
         <img id="before-desc-photo" src="./img/novik.jpg" alt="Denis's photo" />
         <img
-          id="desc-photo"
+          class="desc-photo"
           src="./img/denis.jpg"
           alt="Denis's photo"
           height="478"
@@ -108,15 +112,17 @@
           </p>
           <div class="pc-text">
             <p class="about-text-in">
-              Hi, I'm Denis - UX/UI designer from Minsk. </p>
-              <p class="about-text-in"> I'm interested in
-              design and everything connected with it.</p>
-            <p class="about-text-in">I'm studying at courses "Web and mobile design</p>
-            <p class="about-text-in">
-               interfaces" in IT-Academy.
+              Hi, I'm Denis - UX/UI designer from Minsk.
             </p>
+            <p class="about-text-in">
+              I'm interested in design and everything connected with it.
+            </p>
+            <p class="about-text-in">
+              I'm studying at courses "Web and mobile design
+            </p>
+            <p class="about-text-in">interfaces" in IT-Academy.</p>
             <p class="about-text-in">Ready to implement excellent projects</p>
-            <p class="about-text-in"> with wonderful people.</p>
+            <p class="about-text-in">with wonderful people.</p>
           </div>
         </div>
       </section>
@@ -128,7 +134,7 @@
           <ul class="skill-list">
             <li class="proga">
               <svg class="prog-icon" width="88" height="88">
-                <use href="/img/programms.svg#icon-PS"></use>
+                <use href="./img/programms.svg#icon-PS"></use>
               </svg>
               <p class="skill-text">
                 Adobe <br />
@@ -170,12 +176,25 @@
       <section class="section" id="portfolio">
         <div class="container">
           <h2 class="portfol-head">Portfolio</h2>
-          <img src="./img/fasion.jpg" alt="" />
-          <a href="" class="port-link">Online fashion store - Homepage</a>
-          <img src="./img/reebok.jpg" alt="" />
-          <a href="" class="port-link">Reebok Store - Concept</a>
-          <img src="./img/camera.jpg" alt="" />
-          <a href="" class="port-link">Braun Landing Page - Concept</a>
+          <ul class="example-list">
+            <li>
+              <a href="" class="example">
+                <img src="./img/fasion.jpg" alt="" />
+                Online fashion store - Homepage
+              </a>
+            </li>
+            <li>
+              <a href="" class="example">
+                <img src="./img/reebok.jpg" alt="" />Reebok Store - Concept
+              </a>
+            </li>
+            <li>
+              <a href="" class="example">
+                <img src="./img/camera.jpg" alt="" />
+                Braun Landing Page - Concept
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -228,7 +247,5 @@
         </p>
       </div>
     </footer>
-
-    <script src="js/menu.js"></script>
   </body>
 </html>
